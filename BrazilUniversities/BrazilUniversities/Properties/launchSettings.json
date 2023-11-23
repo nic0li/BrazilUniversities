@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "UniversidadesDoBrasil": {
+    "BrazilUniversities": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

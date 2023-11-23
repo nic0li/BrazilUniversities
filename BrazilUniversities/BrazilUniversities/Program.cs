@@ -1,4 +1,4 @@
-namespace UniversidadesDoBrasil
+namespace BrazilUniversities
 {
     public class Program
     {

@@ -1,1 +1,1 @@
-# UniversidadesDoBrasil
+# BrazilUniversities
