@@ -17,9 +17,9 @@ namespace BrazilUniversities.Controllers
         }
 
         [HttpGet(Name = "Universities")]
-        public Task<IEnumerable<University>> Get(string? country, int? offset, int? limit)
+        public Task<IEnumerable<University>> Get(int? offset, int? limit)
         {
-            return _universityDomainsListApi.GetUniversities(country, offset, limit);
+            return _universityDomainsListApi.GetUniversities("Brazil", offset, limit);
         }
     }
 }
