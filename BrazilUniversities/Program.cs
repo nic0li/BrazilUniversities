@@ -1,3 +1,6 @@
+using BrazilUniversities.Gateways;
+using Refit;
+
 namespace BrazilUniversities
 {
     public class Program
@@ -9,6 +12,11 @@ namespace BrazilUniversities
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddRefitClient<IUniversityDomainsListApi>().ConfigureHttpClient(c =>
+            {
+                c.BaseAddress = new Uri("http://universities.hipolabs.com/");
+            });
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
